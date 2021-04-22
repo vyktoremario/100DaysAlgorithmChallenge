@@ -1,3 +1,8 @@
+/**
+ * Write a function that multiply the digits of a number until it becomes a single digit
+ * @param {number} num 
+ * @returns {number}
+ */
 function persistence(num) {
   let multiply = function (n) {
     return n.reduce((a, b) => {

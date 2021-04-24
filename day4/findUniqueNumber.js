@@ -5,6 +5,10 @@ function findUniq(arr) {
     return +value[0][0]
 }
 
-function findUniq(arr) {
-    return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));
-}
+// function findUniq(arr) {
+    //     return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));
+    // }
+    
+    // for (let i = 0; i < arr.length; i++) {
+    //     frequency[arr[i]] =(frequency[arr[i]] || 0) + 1
+    // }

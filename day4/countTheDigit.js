@@ -3,12 +3,18 @@ function nbDig(n, d) {
     for (let i=0; i <= n; i++) {
        arr.push(i * i)
     }
-      k = arr.join('').split('')
-    let count = 0
-    for (let i = 0; i < k.length; i++){
-      if (k[i] == d){ 
-        count++
-      }
-    }
-     return count
+      let k = arr.join('')
+      console.log(k)
+      let length = k.replaceAll(`${d}`, '')
+      console.log(length)
+      return k.length - length
+    // let count = 0
+    // for (let i = 0; i < k.length; i++){
+    //   if (k[i] == d){ 
+    //     count++
+    //   }
+    // }
+    //  return count
   }
+
+  console.log(nbDig(10, 1))
